@@ -359,15 +359,6 @@ a.activate {
   color: white;
 }
 
-.comentarios{
-  margin-top: 3.5rem;
-  margin-bottom: 3rem;
-}
-
-.comentarios h1{
-  text-align: center;
-}
-
 #icon-close {
   display: none;
 }
@@ -555,15 +546,6 @@ a.activate {
   .cont3B {
     margin-bottom: 20px;
     height: auto;
-  }
-
-  .utterances {
-    width: 100%;
-    overflow: auto;
-  }
-  .utterances-frame {
-    min-width: 100%;
-    min-height: 500px; /* Esto puede variar según tus necesidades */
   }
 }
 
