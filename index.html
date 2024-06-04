@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constelaciones Familiares</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles.css">
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <nav>
+            <a href="index.html" class="btnN activate">Constelaciones Familiares</a>
+            <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+            <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+            <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+            <a href="SobreMetodos.html" class="btnN">Sobre Métodos</a>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span> <!-- Flecha hacia abajo -->
+            <span id="icon-close">&#9650;</span> <!-- Flecha hacia arriba -->
+        </div>
+    </div>
+    <div class="cont-imagen">
+        <img src="./image/imgPrincipal.jpg" alt="img Principal"></img>
+        <label class="titulo">Constelaciones <br /> Familiares</label>
+    </div>
+    <div class="contenido-iz">
+        <div class="text-content-iz">
+            <h3 class="titulo-iz">
+                ¿Qué Son?
+            </h3>
+            <p>
+                Es una técnica desarrollada por Bert Hellinger.
+                Este enfoque permite interpretar comportamientos humanos
+                a partir de características personales, como la inteligencia
+                o el carácter y dichos comportamientos pueden ser entendidos como
+                reacciones a desajustes dentro del sistema familiar, donde cada parte
+                desempeña una función específica que beneficia a las demás.
+                Este conjunto de elementos interactúa a través de su relación mutua,
+                contribuyen a alcanzar un objetivo común. Por ello es esencial observarlo
+                como un todo, en lugar de enfocarse solo en sus partes individuales.
+            </p>
+        </div>
+        <div class="cont-imagen-p-der" id="imgBell">
+            <img src="./image/imgBertHellinger.jpg" alt="Separacion"></img>
+        </div>
+    </div>
+    <div class="contenido-der">
+        <div class="cont-imagen-p-der">
+            <img src="./image/imgSeparacion.jpg" alt="Separacion"></img>
+        </div>
+        <div class="text-content-der">
+            <h3 class="titulo-der">
+                Ejemplo
+            </h3>
+            <p>
+                Un matrimonio que se separa siguiendo un patrón
+                similar al de sus padres y abuelos. Estos comportamientos no se
+                comprenden completamente al analizar solo a los individuos implicados,
+                pero adquieren sentido cuando se examinan dentro del contexto más amplio
+                del sistema familiar. En las Constelaciones Familiares, se trabaja principalmente
+                con las últimas cuatro generaciones, hasta los bisabuelos, donde sostiene que
+                cada miembro de la familia pertenece al sistema y es parte integral del "cuerpo familiar"
+                donde se incluyen todos los miembros, sin olvidar a nadie, y se les guarda en el corazón.
+            </p>
+        </div>
+    </div>
+    <div class="contenido-cent">
+        <div class="text-content-cent">
+            <p class="texto-p">
+                Las reglas fundamentales en un sistema familiar, según las Constelaciones Familiares, son:
+            </p>
+            <div class="cont0">
+                <div class="cont1">
+                    <p><b>Pertenencia:</b> Cada miembro de la familia tiene un lugar en el sistema.</p>
+                    <img class="img-F" src="./image/pertenencia.jpg"></img>
+                </div>
+                <div class="cont2">
+                    <p><b>Orden:</b> Existe un orden en la familia que debe respetarse</p>
+                    <img class="img-F" src="./image/orden.jpg"></img>
+                </div>
+                <div class="cont3">
+                    <p><b>Compensación adecuada:</b> Las dinámicas familiares implican un equilibrio en el dar y recibir.
+                    </p>
+                    <img class="img-F" src="./image/compensacion.jpg"></img>
+                </div>
+            </div>
+            <p>
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="colaboradores">
+            
+                <ul>
+                    <li>Joselyn Patricia</li>
+                    <li>Gabriela Muylema</li>
+                    <li>Dayana Cordova</li>
+                    <li>Evelyn Villacis</li>
+                    <li>Pauleth Arellano</li>
+                    
+                </ul>
+        </div>
+        <div class="colaboradores">
+            <ul>
+                
+            <li>Karla Alajo</li>
+            <li>Karen Culqui</li>
+            <li>Lady Guato</li>
+            <li>Victoria Masaquiza</li>
+            <li>Katherine Carrasco</li>
+           
+           
+        </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }        
+    </script>
+</body>
+
+</html>

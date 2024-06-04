@@ -1,0 +1,552 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body {
+  background-color: rgb(255, 255, 255);
+}
+.barra-navegacion {
+  width: 100%;
+  height: 80px;
+  background-color: rgb(24, 35, 41);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: 1000;
+}
+nav {
+  display: flex;
+}
+a.btnN {
+  background-color: rgb(24, 35, 41);
+  color: white;
+  border: none;
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  justify-content: space-between;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+a.btnN:hover,
+a.activate {
+  background-color: rgb(43, 121, 121);
+  color: white;
+}
+.cont-imagen {
+  width: 100%;
+  height: 85%;
+  display: inline-block;
+  flex-direction: row;
+}
+.cont-imagen img {
+  margin-top: 3%;
+  display: block;
+  width: 100%; /* Ajusta el tamaño de la imagen según sea necesario */
+  height: auto; /* Mantiene la proporción de la imagen */
+}
+.cont-imagen label {
+  margin-top: 10%;
+}
+.cont-imagen .titulo {
+  position: absolute;
+  top: 35%; /* Ajusta la posición vertical del label */
+  left: 50%; /* Ajusta la posición horizontal del label */
+  transform: translate(-50%, -50%); /* Centra el label */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fondo semi-transparente para mejor legibilidad */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espacio alrededor del texto */
+  text-align: center;
+  border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+.titulo-iz {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.titulo-der {
+  margin-bottom: 20px;
+}
+.cont-imagen-p-iz {
+  background-color: black;
+  color: white;
+  max-width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+.contenido-iz {
+  margin-top: 80px;
+  width: 100%;
+  margin-left: 15%;
+  align-items: flex-start;
+  display: flex;
+  gap: 10%;
+}
+
+.text-content-iz {
+  max-width: 28%; /* Ajusta el ancho del texto según sea necesario */
+  text-align: justify;
+}
+.cont-imagen-p-iz img,
+.cont-imagen-p-der img {
+  max-width: auto; /* Asegura que la imagen no se desborde */
+  height: 250px;
+  display: block; /* Evita que la imagen tenga espacios debajo */
+  margin: auto; /* Centra vertical y horizontalmente */
+}
+.cont-imagen-p-iz,
+.cont-imagen-p-der {
+  background-color: black;
+  color: white;
+  max-width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.contenido-der {
+  margin-top: 80px;
+  width: 100%;
+  margin-left: 15%;
+  align-items: flex-start;
+  display: flex;
+  gap: 10%;
+}
+
+
+.text-content-der {
+  max-width: 35%; /* Ajusta el ancho del texto según sea necesario */
+  text-align: justify;
+}
+.cont-imagen-p-der img {
+  max-width: 100%; /* Asegura que la imagen no se desborde */
+  height: 245px;
+}
+
+.contenido-der .cont-imagen-p-der .imagen-cambiar{
+  width: 375px;
+  height: 245px;
+}
+.contenido-cent {
+  text-align: justify;
+  margin-top: 80px;
+  width: 80%;
+  margin-left: 10%;
+}
+.cont-imagen-p-cent {
+  position: relative;
+  background-color: aqua;
+  width: 100%;
+  height: 250px;
+  border-radius: 20px;
+}
+
+.titulo {
+  position: relative;
+  color: black;
+  margin: 0;
+  font-size: 4rem;
+}
+.cont0 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos de manera uniforme */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  gap: 25px; /* Espacio entre los recuadros */
+}
+
+.cont1,
+.cont2,
+.cont3 {
+  flex: 1; /* Hace que todos los elementos hijos tengan la misma anchura */
+  padding: 20px; /* Espacio interno de los recuadros */
+  border: 2px solid rgb(24, 35, 41); /* Bordes para los recuadros */
+  border-radius: 10px;
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+  text-align: center; /* Centra el texto */
+  height: 270px;
+  overflow-y: hidden;
+  box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.img-F {
+  margin-top: 10%;
+}
+.img-A {
+  margin-top: 5%;
+  margin-bottom: 4%;
+  border-radius: 20px;
+}
+.contenido-cent .text-content-cent p.texto-p {
+  margin-bottom: 2rem;
+}
+.titulo-cent {
+  margin-bottom: 0;
+}
+
+#tituloG.titulo-cent-familia{
+  margin-top: 6rem;
+  font-size: 3.5rem;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  background-color: rgb(24, 35, 41);
+  margin-top: 10%;
+  padding: 20px;
+  color: white;
+  display: flex; /* Cambia a flexbox para alinear los divs como columnas */
+  justify-content: space-between; /* Espacia los divs de manera uniforme */
+}
+
+.footer div {
+  flex: 1; /* Cada div ocupa la misma cantidad de espacio */
+  padding: 10px; /* Añade espacio interior a cada div */
+}
+
+.footer .colaboradores h1{
+  font-size: 2rem;
+}
+
+.footer .colaboradores ul li{
+  padding: 5px 5px 5px;
+}
+
+.cont-General {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+}
+
+.contenedor {
+  display: grid;
+  margin: 1px 0 3rem 0;
+  padding: 1em 2em 2em;
+  border-radius: 10px;
+  align-items: center;
+  grid-gap: 20px; /* Espacio entre la lista y la imagen */
+  place-items: center;
+}
+
+.lista {
+  padding: 55px;
+  border: 2px solid rgb(24, 35, 41);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+}
+
+.tomar-Padres,
+.tomar-Padres-parrafo {
+  width: 65%;
+  margin-top: 2rem;
+  text-align: justify;
+}
+
+.tomar-Padres {
+  margin-top: 6%;
+  position: relative;
+  text-align: justify;
+}
+
+.lista {
+  margin-top: 5%;
+  text-align: left;
+  list-style-type: none;
+}
+
+.lista li::before {
+  content: "•";
+  color: #333;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.tomar-Padres-parrafo-final {
+  margin-top: 2rem;
+  border: 2px solid rgb(24, 35, 41);
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 50%;
+  padding: 20px; /* Ajusta este valor según sea necesario */
+}
+
+#contT {
+  margin-left: 20%;
+}
+#contA {
+  margin-left: 10%;
+}
+#tituloG {
+  margin-top: 5%;
+}
+#titulo1 {
+  margin-left: 5%;
+}
+#titulo2 {
+  margin-left: -15%;
+}
+#cont-cen-A {
+  margin-left: 0;
+}
+#imgBell {
+  width: 456px;
+}
+.subtitulo {
+  font-size: 1.1rem;
+}
+.cont0A {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos de manera uniforme */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  gap: 20px; /* Espacio entre los recuadros */
+  margin-top: 1%;
+}
+.cont1A,
+.cont2A,
+.cont3A {
+  flex: 1; /* Hace que todos los elementos hijos tengan la misma anchura */
+  padding: 20px; /* Espacio interno de los recuadros */
+  border: 2px solid rgb(24, 35, 41); /* Bordes para los recuadros */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+  text-align: justify; /* Centra el texto */
+  height: 200px;
+  overflow-y: hidden;
+}
+.cont0B {
+  display: flex;
+  justify-content: space-between; /* Espacia los elementos de manera uniforme */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+  gap: 20px; /* Espacio entre los recuadros */
+  margin-top: 1%;
+}
+.cont1B,
+.cont2B,
+.cont3B {
+  flex: 1; /* Hace que todos los elementos hijos tengan la misma anchura */
+  padding: 20px; /* Espacio interno de los recuadros */ 
+  border: 2px solid rgb(24, 35, 41); /* Bordes para los recuadros */
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box; /* Incluye padding y border en el tamaño total del elemento */
+  text-align: justify; /* Centra el texto */
+  height: 315px;
+  overflow-y: hidden;
+}
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+#icon-close {
+  display: none;
+}
+
+#icon-open.active {
+  display: none;
+}
+
+#icon-close.active {
+  display: inline;
+}
+
+@media (max-width: 1024px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(24, 35, 41);
+  }
+
+  nav a {
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .menu-icon {
+    display: block;
+    margin-left: 2%;
+  }
+  .cont-imagen .titulo {
+    position: -ms-page;
+    top: 150px; /* Ajusta la posición vertical del label */
+    left: 50%; /* Ajusta la posición horizontal del label */
+    transform: translate(-50%, -50%); /* Centra el label */
+    background-color: rgba(
+      0,
+      0,
+      0,
+      0.5
+    ); /* Fondo semi-transparente para mejor legibilidad */
+    color: white; /* Color del texto */
+    font-size: 35px;
+    padding: 10px; /* Espacio alrededor del texto */
+    text-align: center;
+    border-radius: 5px; /* Opcional: esquinas redondeadas */
+  }
+  .barra-navegacion{
+    height: 50px;
+  }
+  .barra-navegacion.active {
+    height: 300px;
+  }
+  .lista {
+    margin-top: 2rem;
+    border: 2px solid rgb(24, 35, 41);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    padding: 20px;
+  }
+  .tomar-Padres,
+  .tomar-Padres-parrafo {
+    width: 90%;
+    margin-top: 2rem;
+    text-align: justify;
+  }
+  .tomar-Padres-parrafo-final {
+    margin-top: 2rem;
+    border: 2px solid rgb(24, 35, 41);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    padding: 20px;
+  }
+  .barra-navegacion.active nav {
+    display: flex;
+  }
+  .contenido-iz,
+  .contenido-der {
+    width: 90%; /* Establece el ancho al 80% */
+    margin: 0 auto; /* Centra horizontalmente */
+    margin-top: 20px;
+  }
+  .contenido-iz img,
+  .contenido-der img {
+    width: 100%; /* Establece el ancho al 100% */
+    max-width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  #imgBell {
+    width: 100%;
+    margin-top: 22px;
+    margin-left: 0;
+  }
+  #contA {
+    margin-left: 4%;
+  }
+  .titulo-iz,
+  .titulo-der {
+    width: 100%;
+    position: relative;
+  }
+
+  .cont-imagen {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cont-imagen img,
+  .cont-imagen label {
+    margin-top: 5%;
+  }
+
+  .contenido-iz,
+  .contenido-der,
+  .contenido-cent {
+    flex-direction: column;
+  }
+
+  .text-content-iz,
+  .text-content-der {
+    max-width: 100%;
+  }
+  .contenido-iz img {
+    width: 100%;
+  }
+  .cont-imagen-p-iz {
+    display: flex;
+    width: 135px;
+  }
+  .cont-imagen-p-der {
+    width: 100%;
+    display: flex;
+  }
+  .cont-imagen-p-iz img,
+  .cont-imagen-p-der img {
+    width: 100%;
+    height: 250px;
+  }
+
+  .cont0 {
+    flex-direction: column;
+  }
+
+  .cont1,
+  .cont2,
+  .cont3 {
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .cont0A {
+    flex-direction: column;
+  }
+
+  .cont1A,
+  .cont2A,
+  .cont3A {
+    margin-bottom: 20px;
+    height: auto;
+  }
+  .cont0B {
+    flex-direction: column;
+  }
+
+  .cont1B,
+  .cont2B,
+  .cont3B {
+    margin-bottom: 20px;
+    height: auto;
+  }
+}
+
+/* Media query para pantallas medianas */

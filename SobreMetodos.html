@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Métodos</title>
+    <link rel="stylesheet" href="./diseñosCSS/styles.css">
+</head>
+
+<body>
+    <div class="barra-navegacion">
+        <nav>
+            <a href="index.html" class="btnN">Constelaciones Familiares</a>
+            <a href="FamiliasdeOrigen.html" class="btnN">Familia de Origen</a>
+            <a href="FamiliaActual.html" class="btnN">Familia Actual</a>
+            <a href="MásFamilia.html" class="btnN">Mas alla de las familias</a>
+            <a href="SobreMetodos.html" class="btnN activate">Sobre Métodos</a>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+            <span id="icon-open">&#9660;</span> <!-- Flecha hacia abajo -->
+            <span id="icon-close">&#9650;</span> <!-- Flecha hacia arriba -->
+        </div>
+    </div>
+    <div class="cont-imagen">
+        <img src="./image/familia-cons.jpg" alt="img Principal"></img>
+        <label class="titulo">Sobre <br />Métodos</label>
+    </div>
+    <div class="contenido-iz">
+        <div class="text-content-iz">
+            <h3 class="titulo-iz">
+                Constelaciones Familiares
+            </h3>
+            <p>
+                Las constelaciones familiares, aunque ampliamente utilizadas y populares en muchos países, siguen siendo
+                un tema de debate en la comunidad terapéutica. Mientras algunos autores y practicantes las defienden y
+                desarrollan con adaptaciones y mejoras, otros critican la falta de evidencia científica y los riesgos
+                potenciales. Sin embargo, la metodología ha aportado una nueva perspectiva sobre cómo las dinámicas
+                familiares pueden influir en la vida de los individuos, ofreciendo herramientas para la sanación
+                emocional y relacional.
+                Las constelaciones familiares, aunque desarrolladas principalmente por Bert Hellinger, han sido
+                discutidas y desarrolladas por varios autores y terapeutas que han contribuido con sus perspectivas y
+                críticas sobre los métodos y principios de esta terapia.
+            </p>
+        </div>
+        <div class="cont-imagen-p-iz" id="imgBell">
+            <img src="./image/imgPrincipal.jpg" alt="Bert Hellinger"></img>
+        </div>
+    </div>
+    <div class="contenido-der">
+        <div class="cont-imagen-p-der">
+            <img src="./image/enfFeno.jpg" alt="Separacion"></img>
+        </div>
+        <div class="text-content-der">
+            <h3 class="titulo-der">
+                Enfoque Fenomenológico:
+            </h3>
+            <p>
+                Hellinger enfatiza una aproximación fenomenológica, es decir, observar y experimentar sin prejuicios
+                ni teorías preestablecidas, permitiendo que las dinámicas familiares se revelen de manera natural.
+                Es crucial que los trabajadores sociales estén adecuadamente capacitados en la metodología de las
+                constelaciones familiares para aplicarlas de manera efectiva y ética.
+            </p>
+        </div>
+    </div>
+    <div class="contenido-iz">
+        <div class="text-content-iz">
+            <h3 class="titulo-iz">
+                Complemento a Otros Métodos:
+            </h3>
+            <p>
+                Las constelaciones familiares deben ser vistas como una herramienta complementaria dentro del arsenal de
+                métodos de intervención familiar y no como una solución única.
+            </p>
+        </div>
+        <div class="cont-imagen-p-iz" id="imgBell">
+            <img src="./image/comple.jpg" alt="Bert Hellinger"></img>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="colaboradores">
+            
+                <ul>
+                    <li>Joselyn Patricia</li>
+                    <li>Gabriela Muylema</li>
+                    <li>Dayana Cordova</li>
+                    <li>Evelyn Villacis</li>
+                    <li>Pauleth Arellano</li>
+                    
+                </ul>
+        </div>
+        <div class="colaboradores">
+            <ul>
+                
+            <li>Karla Alajo</li>
+            <li>Karen Culqui</li>
+            <li>Lady Guato</li>
+            <li>Victoria Masaquiza</li>
+            <li>Katherine Carrasco</li>
+           
+           
+        </ul>
+        </div>
+    </div>
+    <script>
+        document.getElementById('menu-icon').onclick = function () {
+            var nav = document.querySelector('.barra-navegacion');
+            nav.classList.toggle('active');
+            document.getElementById('icon-open').classList.toggle('active');
+            document.getElementById('icon-close').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
